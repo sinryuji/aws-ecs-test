@@ -52,3 +52,4 @@ deploy:
     - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
     - aws configure set region ap-northeast-2
     - aws ecs update-service --cluster ci-cd-test-cluster --service ci-cd-test-service --task-definition ci-cd-test-task:1 --force-new-deployment
+
